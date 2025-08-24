@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "from-bad-to-good",
+	"version": "1.0.0",
+	"name": "from bad to good",
+	"description": "this mod turns rotten flesh into leather!",
+	"authors": [
+		"Arthur Orsi"
+	],
+	"contact": {
+		"homepage": "https://x.com/mods_ArthruOrsi",
+		"sources": "https://github.com/ArthurOrsi/from-bad-to-good"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/from-bad-to-good/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"arthurori.from.bad.to.good.FromBadToGood"
+		],
+		"fabric-datagen": [
+			"arthurori.from.bad.to.good.FromBadToGoodDataGenerator"
+		]
+	},
+	"mixins": [
+		"from-bad-to-good.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
